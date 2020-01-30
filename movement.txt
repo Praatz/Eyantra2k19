@@ -23,7 +23,7 @@ int noSpeed = 0;
 void moveControl(int x, int y)
 {
 
-  if(y >= maxRange && x >= minRange && x <= maxRange) //zataci R
+  if(y >= maxRange && x >= minRange && x <= maxRange) 
   {
     digitalWrite(RightMotorDir,HIGH); 
     digitalWrite(LeftMotorDir,HIGH);
@@ -32,7 +32,7 @@ void moveControl(int x, int y)
   }
  
   // move forward right
-  else if(x >= maxRange && y >= maxRange)   //zataci R
+  else if(x >= maxRange && y >= maxRange)   
   {
     digitalWrite(RightMotorDir,HIGH);
     digitalWrite(LeftMotorDir,HIGH);
